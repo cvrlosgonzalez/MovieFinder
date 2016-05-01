@@ -6,13 +6,11 @@
   </head>
   <body>
     <h1>MovieFinder</h1>
+    <form>
+      <input type="search" name="title">
+    </form>
+    <h2><%= @movie.title %></h2>
 
-    <p>
-      <%= 2+2 %>
-    </p>
-
-    <% ["Snickers", "Starburst", "Twix"].each do |candy| %>
-    <p><%= candy %></p>
-    <%end%>
+    <p><%= @movie.plot %></p>
   </body>
 </html>
